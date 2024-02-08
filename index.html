@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-[#161616] text-white">
+    <header>
+        <div class="container mx-auto py-6 px-6  uppercase">
+            <div class="header-content-wrapper flex flex-col md:flex-row justify-between md:items-center gap-10 md:gap-0">
+                <div class="logo-and-ham-icons-wrapper flex justify-between">
+                    <img src="assets/img/logo.png" alt="">
+                    <div class="hamb-icons-wrapper">
+                        <button class="hamb-icon-open scale-[2] block md:hidden" onclick="hambOpen()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                            </svg>
+                        </button>
+                        <button class="hamb-icon-off scale-[2.5] hidden" onclick="hambOff()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="header-nav-wrapper hidden md:block">
+                    <nav>
+                        <ul class="flex flex-col  md:flex-row gap-5 lg:gap-8 px-4 md:px-0 ">
+                            <li><a href="#?" class="hover:text-gray-300 transition-all">Abaout Us</a></li>
+                            <li class="nav-hover-li  relative ">
+                                <a href="#?" class="flex items-center pb-1  gap-2 hover:text-gray-300 transition-all">
+                                    Ouer Services
+                                    <svg class="hover-icon rotate-[-90deg] md:rotate-0" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+                                        <path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659" />
+                                    </svg>
+                                </a>
+                                <div class="extra-hover-ul-wrapper hidden absolute -right-44 md:-right-0 -top-5 md:top-5 w-[105%] ps-2  pt-5">
+                                    <ul class="hover-extra-ul inline-block   md:flex flex-col gap-2 ">
+                                        <li><a href="#?" class="hover:text-gray-300 transition-all">Cyrpto Help</a></li>
+                                        <li><a href="#?" class="hover:text-gray-300 transition-all">Cyrpto Assets</a></li>
+                                        <li><a href="#?" class="hover:text-gray-300 transition-all">Cyrpto Selling</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#?" class="hover:text-gray-300 transition-all">Work With Us</a></li>
+                            <li><a href="#?" class="hover:text-gray-300 transition-all">Blog </a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="header-end-content-wrapper  hidden md:block">
+                    <div class=" flex items-center justify-center gap-2 transition-all">
+                        <div class="header-end-item-square h-[15px] w-[15px] rounded-full"></div>
+                        <div class="header-end-item-word"><a href="#?" class="">Get In Touch</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
