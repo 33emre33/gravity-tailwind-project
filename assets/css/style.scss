@@ -2,6 +2,7 @@
 *{
     font-family: 'Inter', sans-serif;   
 }
+
 /* button:before */
 
 .header-end-item-square{
@@ -49,4 +50,11 @@ background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
 background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
 
 
+}
+
+.about-bottom-box-item-wrapper{
+
+  &:hover{
+    background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
+  }
 }
