@@ -402,8 +402,8 @@
                             </div>
                             <div class="team-start-item-back-item absolute z-[-1] -top-28">
                                 <div class="relative">
-                                    <img src="assets/img/team/back.png" alt="">
-                                    <img src="assets/img/team/back-2.png" alt="" class="absolute -right-8 top-0">
+                                    <img src="assets/img/team/back.png" alt="" class="">
+                                    <img src="assets/img/team/back-2.png" alt="" class="absolute -right-44 -top-7 md:-right-8 md:top-0">
                                 </div>
                             </div>
 
@@ -428,7 +428,7 @@
         </section>
 
         <section>
-            <div class="container  mx-auto  px-6   md:px-0  py-10 my-10 md:my-28  relative overflow-hidden ">
+            <div class="container  mx-auto  px-6   md:px-0  py-10 my-10 md:my-28  relative ">
 
                 <div class="contact-content-all-wrapper  flex flex-col items-center justify-start gap-8 pt-8 md:pt-20  ">
                     <div class="contact-heading-wrapper text-4xl font-medium text-center flex flex-col gap-7 md:gap-10">
@@ -447,7 +447,7 @@
                     <div class="relative">
                         <img src="assets/img/contact/back-1.png" alt="" class="absolute -left-56 md:-left-14">
                         <img src="assets/img/contact/back-2.png" alt="" class="absolute scale-[0.9] -right-44  md:right-1 -top-10 md:-top-24">
-                        <img src="assets/img/contact/back-3.png" alt="" class="absolute -right-24  top-20 md:top-0 md:right-36 ">
+                        <img src="assets/img/contact/back-3.png" alt="" class="absolute -right-24  top-20 md:top-0 md:-right-48 ">
 
 
                     </div>
@@ -456,76 +456,118 @@
             </div>
         </section>
 
+        <footer class="border-t border-solid border-gray-500">
+            <div class="container mx-auto px-10 md:px-24   pt-16 pb-10">
+                <div class="grid grid-rows-1 grid-cols-12">
+                    <div class="col-span-12 md:col-span-6 mt-9 md:mt-0">
+                        <div class="footer-top-start-content-wrapper flex flex-col gap-3 items-center md:items-start">
+                            <div class="heading uppercase">Gravity Team</div>
+                            <div class="content-wrapper text-gray-300 text-sm text-center md:text-start  flex flex-col gap-1">
+                                <div class="">About Us</div>
+                                <div class="">Work with Us</div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-span-12 md:col-span-6 order-first md:order-none">
+                        <div class="footer-top-end-content-wrapper  flex justify-center md:justify-end  items-center">
+                            <img src="assets/img/logo.png" alt="">
+
+                        </div>
+                    </div>
+                    <div class="col-span-12 md:col-span-6  text-sm text-gray-300 pt-10 md:pt-14">
+                        <div class="footer-bottom-start-content-wrapper  flex justify-center md:justify-start  ">
+                            <div class="">Terms of Use & Privacy Policy</div>
+
+                        </div>
+                    </div>
+                    <div class="col-span-12 md:col-span-6  text-sm text-gray-300 pt-5 md:pt-14">
+                        <div class="footer-bottom-end-content-wrapper  flex justify-center md:justify-end ">
+                            <div class="">©2022 Gravity Team. All Rights Reserved</div>
+
+                        </div>
+                    </div>
+                </div>
 
 
-        <script src="assets/js/app.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script>
-            var swiper = new Swiper(".mySwiper1", {
-                slidesPerView: 1.5,
-                spaceBetween: 160,
-                centeredSlides: true,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
+            </div>
 
+
+    </div>
+    </footer>
+
+
+
+    <script src="assets/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper1", {
+            slidesPerView: 1,
+            spaceBetween: 160,
+            centeredSlides: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+
+            },
+            breakpoints: {
+                375: {
+                    slidesPerView: 2,
+                    spaceBetween: 50,
+                    centeredSlides: true,
                 },
-                breakpoints: {
-                    375: {
-                        slidesPerView: 3,
-                        spaceBetween: 140,
-                    },
-                    425: {
-                        slidesPerView: 2,
-                        spaceBetween: 40,
-                    },
-                    640: {
-                        slidesPerView: 3,
-                        spaceBetween: 20,
-                    },
-                    768: {
-                        slidesPerView: 3,
-                        spaceBetween: 40,
-                    },
+                425: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 90,
+                },
 
 
-                },
-            });
-            var swiper2 = new Swiper(".mySwiper2", {
-                slidesPerView: 1,
-                spaceBetween: 40,
-                centeredSlides: true,
-                pagination: {
-                    el: ".swiper-pagination2",
-                    clickable: true,
+            },
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            slidesPerView: 1,
+            spaceBetween: 40,
+            centeredSlides: true,
+            pagination: {
+                el: ".swiper-pagination2",
+                clickable: true,
 
+            },
+            navigation: {
+                nextEl: ".button-next",
+                prevEl: ".button-prev",
+            },
+            /*breakpoints: {
+                375: {
+                    slidesPerView: 3,
+                    spaceBetween: 140,
                 },
-                navigation: {
-                    nextEl: ".button-next",
-                    prevEl: ".button-prev",
+                425: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
                 },
-                /*breakpoints: {
-                    375: {
-                        slidesPerView: 3,
-                        spaceBetween: 140,
-                    },
-                    425: {
-                        slidesPerView: 2,
-                        spaceBetween: 40,
-                    },
-                    640: {
-                        slidesPerView: 3,
-                        spaceBetween: 20,
-                    },
-                    768: {
-                        slidesPerView: 3,
-                        spaceBetween: 40,
-                    },
-    
-    
-                },*/
-            });
-        </script>
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+ 
+ 
+            },*/
+        });
+    </script>
     </div>
 </body>
 
