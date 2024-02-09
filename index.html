@@ -320,7 +320,7 @@
             <div class="back-item-wrapper absolute -top-28 -left-96 z-[-1] select-none">
                 <div class="relative">
                     <img src="assets/img/partners/back-item.png" alt="">
-                    <div class=" absolute right-96  top-32">
+                    <div class=" absolute right-96  top-32 hidden md:block">
                         <div class="relative scale-[0.8]">
                             <img src="assets/img/partners/back-item-elaman-1.svg" alt="">
                             <img src="assets/img/partners/back-item-elaman-2.svg" alt="" class="absolute -left-14 rotate-[-10deg] top-28">
@@ -338,20 +338,32 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper1", {
-            slidesPerView: 3,
-            spaceBetween: 80,
+            slidesPerView: 1.5,
+            spaceBetween: 160,
             centeredSlides: true,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
-                rotate: 90,
+
             },
             breakpoints: {
-
+                375: {
+                    slidesPerView: 3,
+                    spaceBetween: 140,
+                },
+                425: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
                 768: {
                     slidesPerView: 3,
-                    spaceBetween: 150,
+                    spaceBetween: 40,
                 },
+
 
             },
         });
