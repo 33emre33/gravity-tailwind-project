@@ -18,9 +18,10 @@
             }
         }
     </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
-<body class="bg-[#161616] text-white">
+<body class="bg-[#161616] text-white ">
     <header>
         <div class="container mx-auto py-8 px-6  uppercase">
             <div class="header-content-wrapper flex flex-col md:flex-row justify-between md:items-center gap-10 md:gap-0">
@@ -42,7 +43,7 @@
                 <div class="header-nav-wrapper hidden md:block">
                     <nav>
                         <ul class="flex flex-col  md:flex-row gap-5 lg:gap-8 px-4 md:px-0 ">
-                            <li><a href="#?" class="hover:text-gray-300 transition-all">Abaout Us</a></li>
+                            <li><a href="#about" class="hover:text-gray-300 transition-all">Abaout Us</a></li>
                             <li class="nav-hover-li  relative ">
                                 <a href="#?" class="flex items-center pb-1  gap-2 hover:text-gray-300 transition-all">
                                     Ouer Services
@@ -96,7 +97,7 @@
     </section>
 
     <section>
-        <div class="container  mx-auto  px-6 pt-28 md:pt-5  md:px-0">
+        <div class="container  mx-auto  px-6 pt-28 md:pt-5  md:px-0" id="about">
             <div class="about-top-content-wrapper  flex flex-col items-center text-center gap-6">
                 <div class="about-top-content-heading font-medium text-5xl">
                     About Gravity Team
@@ -262,12 +263,99 @@
 
             </div>
         </div>
-        <div class="making-background-item absolute scale-[3] md:scale-[1] top-2/4 md:-top-2/4 -left-3/4  md:-left-3/4 z-[-1]">
+        <div class="making-background-item select-none absolute scale-[3] md:scale-[1] top-2/4 md:-top-2/4 -left-3/4  md:-left-3/4 z-[-1]">
             <img src="assets/img/making/background-item.png" alt="">
         </div>
     </section>
 
+    <section>
+        <div class="container  mx-auto  px-6   md:px-0   py-20 relative">
+            <div class="grid grid-rows-1 grid-cols-12 ">
+                <div class="col-span-12 md:col-span-6  flex justify-center items-center ">
+                    <div class="partners-start-item-wrapper md:ps-14">
+                        <div class="content font-medium text-4xl w-60">Our Partners & Friends</div>
+                    </div>
+                </div>
+                <div class="col-span-12 md:col-span-6  flex justify-start md:pe-28 pt-16 md:pt-0">
+                    <div class="swiper mySwiper1 w-[500px]  ">
+                        <div class="swiper-wrapper flex flex-row">
+                            <div class="swiper-slide">
+                                <div class="partners-box-wrapper inline-block px-10 py-8 border-[1px] border-solid border-gray-600 rounded-lg">
+                                    <div class="partners-box flex flex-col items-center gap-2">
+                                        <img src="assets/img/partners/bit.svg" alt="">
+                                        <div class="uppercase text-gray-400 text-sm">bitbank</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="partners-box-wrapper inline-block px-10 py-8 border-[1px] border-solid border-gray-600 rounded-lg">
+                                    <div class="partners-box flex flex-col items-center gap-2">
+                                        <img src="assets/img/partners/binance.svg" alt="">
+                                        <div class="uppercase text-gray-400 text-sm">binance</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide ">
+                                <div class="partners-box-wrapper inline-block px-10 py-8 border-[1px] border-solid border-gray-600 rounded-lg">
+                                    <div class="partners-box flex flex-col items-center gap-2">
+                                        <img src="assets/img/partners/bitmap.svg" alt="">
+                                        <div class="uppercase text-gray-400 text-sm">bitmap</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="partners-box-wrapper inline-block px-10 py-8 border-[1px] border-solid border-gray-600 rounded-lg">
+                                    <div class="partners-box flex flex-col items-center gap-2">
+                                        <img src="assets/img/partners/conbase.svg" alt="">
+                                        <div class="uppercase text-gray-400 text-sm">conbase</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--<div class="swiper-pagination "></div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="back-item-wrapper absolute -top-28 -left-96 z-[-1] select-none">
+                <div class="relative">
+                    <img src="assets/img/partners/back-item.png" alt="">
+                    <div class=" absolute right-96  top-32">
+                        <div class="relative scale-[0.8]">
+                            <img src="assets/img/partners/back-item-elaman-1.svg" alt="">
+                            <img src="assets/img/partners/back-item-elaman-2.svg" alt="" class="absolute -left-14 rotate-[-10deg] top-28">
+                            <img src="assets/img/partners/back-item-elaman-3.svg" alt="" class="absolute -right-14 rotate-[10deg]">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
     <script src="assets/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper1", {
+            slidesPerView: 3,
+            spaceBetween: 80,
+            centeredSlides: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                rotate: 90,
+            },
+            breakpoints: {
+
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 150,
+                },
+
+            },
+        });
+    </script>
 </body>
 
 </html>

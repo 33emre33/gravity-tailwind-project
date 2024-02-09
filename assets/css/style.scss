@@ -4,7 +4,9 @@
 }
 
 /* button:before */
-
+html{
+  scroll-behavior: smooth;
+}
 .header-end-item-square{
 
 background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
@@ -56,5 +58,29 @@ background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
 
   &:hover{
     background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
+  }
+}
+.partners-box-wrapper{
+ 
+
+background: linear-gradient(180deg, rgba(65, 85, 114, 0.15) 0%, rgba(27, 27, 30, 0.1) 100%);
+
+
+
+
+}
+
+.mySwiper1{
+  .swiper-wrapper{
+    .swiper-slide{
+     
+    
+      &.swiper-slide-prev{
+        opacity: 0.2;
+      }
+      &.swiper-slide-next{
+        opacity: 0.5;
+      }
+    } 
   }
 }
