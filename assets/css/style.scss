@@ -15,18 +15,11 @@ background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
 
 }
 .header-nav-wrapper{
-    a{
-    &:hover{
-        text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
-        0px -4px 10px rgba(255,255,255,0.3);
-    }
-    }
+    
 .nav-hover-li{
   
-
-  
     &:hover{
-      
+     
         .extra-hover-ul-wrapper{
            display: block;
         }
@@ -45,7 +38,6 @@ background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
       }
     }
 }
-
 
 
 
@@ -92,5 +84,20 @@ background: linear-gradient(180deg, rgba(65, 85, 114, 0.15) 0%, rgba(27, 27, 30,
  
   .swiper-button-disabled{
     opacity: 0.5;
+  }
+}
+.top-btn-back-item{
+  animation: back 2s linear infinite;
+  @keyframes back {
+    1%{
+      opacity: 1;
+    }
+    50%{
+      opacity: 0.5;
+    }
+    100%{
+      opacity: 100;
+    }
+    
   }
 }
